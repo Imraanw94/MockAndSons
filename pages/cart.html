@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link href="../css/taskStyle.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src="../js/task.js"></script>
+
+    <title>Mock & Son's - Shopping Cart</title>
+</head>
+
+<body id="cart">
+    <nav>
+        <div class="nav-header">
+            <h1>Mock & Sons</h1>
+            <span>Fruit & Veg Grocers'</span>
+        </div>
+        <ul id="nav-links">
+            <li>
+                <a href="home.html"><span class="nav-link">Home</span></a>
+            </li>
+            <li>
+                <a href="catalogue.html"><span class="nav-link">Catalogue</span></a>
+            </li>
+            <li>
+                <a href="contact.html"><span class="nav-link">Contact Us</span></a>
+            </li>
+            <li>
+                <a href="about.html"><span class="nav-link">About</span></a>
+            </li>
+            <li>
+                <a id="cart-link" href="cart.html"><span class="nav-link">Cart:</span>
+                    <span id="cart-count" class="nav-link">0</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container cart">
+        <!-- Hold down the mouse button to view more info on items-->
+        <table class="table">
+            <tbody>
+                <tr id="fruit-row">
+                    <th scope="row">
+                        <div id="fruit-cart" class="h2"></div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Hold down the mouse button to view more info on items-->
+        <table class="table">
+            <tbody>
+                <tr id="vegetable-row">
+                    <th scope="row">
+                        <div id="vegetable-cart" class="h2"></div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputDiscount" class="h5">Discount Code</label>
+                <input type="text" class="form-control" id="inputDiscount" placeholder="Discount Code">
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="discountButton" >Submit</button>
+        <hr>
+        <div class="form-group">
+            <label class="h5">How would you like to receive your fruits and veggies?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="collectionDeliveryRadio" id="collectionRadio" value="option1">
+                <label class="form-check-label" for="collectionRadio">Collection</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="collectionDeliveryRadio" id="deliveryRadio" value="option2">
+                <label class="form-check-label" for="deliveryRadio">Delivery</label>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="checkoutButton" disabled>Checkout</button>
+    </div>
+</body>
+
+</html>
